@@ -123,6 +123,7 @@ int main(int argc, char *argv[])
 			continue;
 		}
 		fprintf(stderr, "Invalid option: %s\n", *argv);
+        free(tmp);
 		exit(1);
 	}
 	wflags[wlen] = '\0';
